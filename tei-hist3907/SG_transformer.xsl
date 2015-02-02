@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+ xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="2.0">
+ 
+ <xsl:output method="text" version="4.0" encoding="UTF-8"/>
+ 
+ <xsl:template match="/root">ID, Newspaper Title,Newspaper City,Newspaper Province,Newspaper Country,Year,Month,Day,Section,Article Type,Text,Collection Date,Transcription Date,Type,URL,Repository,Method,Transcriber,Keywords,Named Persons,Named Locations, Datelines 
+<xsl:for-each select="item">
+    ID<xsl:value-of select="id"/>,<xsl:value-of select="publication_information/newspaper_title"/>,<xsl:value-of select="publication_information/newspaper_city"/>, <xsl:value-of select="publication_information/newspaper_province"/>, <xsl:value-of select="publication_information/newspaper_country"/>, <xsl:value-of select="publication_information/year"/>, <xsl:value-of select="publication_information/month"/>, <xsl:value-of select="publication_information/day"/>, <xsl:value-of select="publication_information/section_name"/>, <xsl:value-of select="articletype"/>,<xsl:for-each select="p"><xsl:value-of select='normalize-space(translate(.,",",""))'/></xsl:for-each>, <xsl:value-of select="transcription_information/collection_date"/>, <xsl:value-of select="transcription_information/transcription_date"/>,<xsl:value-of select="transcription_information/type"/>,<xsl:value-of select="transcription_information/repository"/>,<xsl:value-of select="transcription_information/url"/>,<xsl:value-of select="transcription_information/method"/>,<xsl:value-of select="transcription_information/transcriber"/>,<xsl:for-each select="p/mention/@keyword"><xsl:value-of select="."/><xsl:if test="position() != last()">;</xsl:if></xsl:for-each>,<xsl:for-each select="p/mention/@name"><xsl:value-of select='translate(.,",","_")'/><xsl:if test="position() != last()">;</xsl:if></xsl:for-each>,<xsl:for-each select="p/mention"><xsl:if test="@country !=''"><xsl:value-of select="@city"/>_<xsl:value-of select="@province"/>_<xsl:value-of select="@country"/><xsl:if test="position() != last()">;</xsl:if></xsl:if></xsl:for-each>,<xsl:for-each select="p/dateline"><xsl:value-of select="@city"/>_<xsl:value-of select="@province"/>_<xsl:value-of select="@country"/><xsl:if test="position() != last()">;</xsl:if></xsl:for-each>
+</xsl:for-each>
+ </xsl:template>
+</xsl:stylesheet>
