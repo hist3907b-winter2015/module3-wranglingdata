@@ -1,5 +1,6 @@
 This worksheet, and all related files, are released CC-BY. 
-By M. H. Beals; Adapted for HIST3907b by S Graham
+
+[By M. H. Beals](https://github.com/mhbeals/TEI-Close-Reading); Adapted for HIST3907b by S Graham
 
 # Close Reading with TEI #
 
