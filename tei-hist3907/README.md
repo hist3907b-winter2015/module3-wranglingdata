@@ -89,6 +89,8 @@ If you hover over the coloured sections, you should see a pop-up with the additi
 
 ### Now: transformations!
 
-In the TEI Close Reading folder, there is a file called [SG_transformer.xsl](SG_transformer.xsl). Open that file in your text editor. What tags would it be looking for? What might it do to your markup? What line would you change in your XML file to get it to point to this stylesheet?
+In the TEI Close Reading folder, there is a file called [SG_transformer.xsl](SG_transformer.xsl). Open that file in your text editor. What tags would it be looking for? What might it do to your markup? What line would you change in your XML file to get it to point to this stylesheet? What would you have to do to this file (which was originally written for another project) to get it to work with the tags in _this_ exercise? Write all this down in your open notebook. It is a good habit to get into to keep track of your thoughts when looking at ancillary files like this.
+
+You don't necessarily have to adapt the transformer file, but you can if you're up to the challenge!
 
 If the nature of your project will involve a lot of transcription, you would be well advised to use an XML editor like [OxygenXML](http://www.oxygenxml.com/), which has a free 1 month trial. The editor makes it easy to maintain _consistency_ in your markup, and also, to quickly create stylesheets for whatever purpose you need. There are also a number of utility programs freely available that will convert XML to CSV or other formats. One such may be [found here](https://code.google.com/p/xml2csv-conv/). But the best way to transform these XML files is with XSL. 
