@@ -19,7 +19,7 @@ Visit the site's collections via the 'Browse' function
 
 Locate the pamphlet *Negro Slavery* by Zachary Macaulay and open it
 
-This is an abolitionist pamphlet regarding the Atlantic slave trade, presenting and examine evidence of how it is run.  When you approach a primary source like this, it is tempting to read through it from beginning to end, to get an overview of its contents, and then 'mine' or 'cherry-pick' good quotations to include in your assessments.  However, we are going to focus on examine a very small part of the text in a very high level of detail.  Each of you will be working on one page of text, becoming the 'class expert' on it and its contents.
+This is an abolitionist pamphlet regarding the Atlantic slave trade, presenting and examine evidence of how it is run.  When you approach a primary source like this, it is tempting to read through it from beginning to end, to get an overview of its contents, and then 'mine' or 'cherry-pick' good quotations to include in your assessments.  However, we are going to focus on examine a very small part of the text in a very high level of detail.  
 
 ### Setting Up Your Workspace ###
 
