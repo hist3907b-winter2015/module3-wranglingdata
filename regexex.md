@@ -4,21 +4,21 @@ The correspondence of the Republic of Texas was collated into a single volume an
 
 There are several hundred entries in that index. You could clean them up by hand, deleting and cutting and pasting, but with the power of regex, we'll go from this:
 
-``` Sam Houston to A. B. Roman, September 12, 1842 101 
+``` Sam Houston to A. B. Roman, September 12, 1842 101 ```
 
-Sam Houston to A. B. Roman, October 29, 1842 101 
+``` Sam Houston to A. B. Roman, October 29, 1842 101 `` 
 
-Correspondence for 1843-1846 — 
+``` Correspondence for 1843-1846 — ```
 
-Isaac Van Zandt to Anson Jones, January 11, 1843 103 ```
+``` Isaac Van Zandt to Anson Jones, January 11, 1843 103 ```
 
 ...to nicely CSV-formatted table like this:
 
-``` Sam Houston, A. B. Roman, September 12 1842 
+``` Sam Houston, A. B. Roman, September 12 1842 ```
 
-Sam Houston, A. B. Roman, October 29 1842 
+``` Sam Houston, A. B. Roman, October 29 1842 ```
 
-Isaac Van Zandt, Anson Jones, January 11 1843 ```
+``` Isaac Van Zandt, Anson Jones, January 11 1843 ```
 
 ## Getting started
 
