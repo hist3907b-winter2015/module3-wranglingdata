@@ -70,39 +70,39 @@ instead. The parentheses signify a group, and like the order of operations in ar
 
 The period character . in regular expressions directs the search to just find any character at all. For example, if we searched for:
 
-```d.g``` 
+``` d.g ``` 
 
 the search would return "dig", "dog", "dug", and so forth. 
 
 Another special character from our cheat sheet, the plus + instructs the program to find any number of the previous character. If we search for 
 
-```do+g```
+``` do+g ```
 
 it would return any words that looked like "dog", "doog", "dooog", and so forth. Adding parentheses before the plus would make a search for repetitions of whatever is in the parentheses, for example querying 
 
-```(do)+g```
+``` (do)+g ```
 
 would return "dog", "dodog", "dododog", and so forth.
 
 Combining the plus '+' and period '.' characters can be particularly powerful in regular expressions, instructing the program to find any amount of any characters within your search. A search for 
 
-```d.+g```
+``` d.+g ```
 
 for example, might return "dried fruits are g", because the string begins with "d" and ends with "g", and has various characters in the middle. Searching for simply ".+" will yield query results that are entire lines of text, because you are searching for any character, and any amount of them.
 
 Parentheses in regular expressions are also very useful when replacing text. The text within a regular expression forms what's called a group, and the software you use to search remembers which groups you queried in order of their appearance. For example, if you search for 
 
-```(dogs)( and )(cats)```
+``` (dogs)( and )(cats) ```
 
 which would find all instances of "dogs and cats" in your document, your program would remember "dogs" is group 1, " and " is group 2, and "cats" is group 3. Notepad++ remembers them as "\1", "\2", and "\3" for each group respectively.
 
 If you wanted to switch the order of "dogs" and "cats" every time the phrase "dogs and cats" appeared in your document, you would type 
 
-```(dogs)( and )(cats)```
+``` (dogs)( and )(cats) ```
 
 in the 'find' box, and 
 
-```\3\2\1```
+``` \3\2\1 ```
 
 in the 'replace' box. That would replace the entire string with group 3 ("cats") in the first spot, group 2 (" and ") in the second spot, and group 1 ("dogs") in the last spot, thus changing the result to "cats and dogs".
 
