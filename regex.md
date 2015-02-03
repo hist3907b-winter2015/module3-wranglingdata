@@ -26,11 +26,11 @@ With the spaces, "animal" replace "dog" or "cat" only in those instances where t
 
 The even more astute reader will notice that this still does not solve our problem of replacing every instance of "dog" or "cat". What if the word comes at the beginning of a line, so it is not in front of a space? What if the word is at the end of a sentence or a clause, and thus followed by a punctuation? Luckily, in the language of regex, you can represent the beginning or end of a word using special characters. 
 
-```\<``` 
+``` \< ``` 
 
 means the beginning of a word. In some programs, like TextWrangler, this is used instead:
 
-```\b```
+```\b ```
 
 so if you search for ```\<cat``` , (or, in TextWrangler, ```\bcat``` )it will find "cat", "catch", and "catsup", but not "copycat", because your query searched for words beginning with "cat". For patterns at the end of the line, you would use:
 
