@@ -30,41 +30,41 @@ The even more astute reader will notice that this still does not solve our probl
 
 means the beginning of a word. In some programs, like TextWrangler, this is used instead:
 
-```\b ```
+``` \b ```
 
 so if you search for ```\<cat``` , (or, in TextWrangler, ```\bcat``` )it will find "cat", "catch", and "catsup", but not "copycat", because your query searched for words beginning with "cat". For patterns at the end of the line, you would use:
 
-```\>``` 
+``` \> ``` 
 
 or in TextWrangler,
 
-```\b```
+``` \b ```
 
 again.  The remainder of this walk-through imagines that you are using Notepad++, but if you’re using Textwrangler, keep this quirk in mind. If you search for 
 
-```cat\>``` 
+``` cat\> ``` 
 
 it will find "cat" and "copycat", but not "catch," because your query searched for words ending with -"cat".
 
 Regular expressions can be mixed, so if you wanted to find words only matching "cat", no matter where in the sentence, you'd search for 
 
-```\<cat\>```
+``` \<cat\> ```
 
 which would find every instance. And, because all regular expressions can be mixed, if you searched for (in Notepad++; what would you change, if you were using TextWrangler?)
 
-```\<cat|dog\>```
+``` \<cat|dog\> ```
 
 and replaced all with "animal", you would have a document that replaced all instances of "dog" or "cat" with "animal", no matter where in the sentence they appear. You can also search for variations within a single word using parentheses. For example if you were looking for instances of "gray" or "grey", instead of the search query
 
-```gray|grey```
+``` gray|grey ```
 
 you could type 
 
-```gr(a|e)y```
+``` gr(a|e)y ```
  
 instead. The parentheses signify a group, and like the order of operations in arithmetic, regular expressions read the parentheses before anything else. Similarly, if you wanted to find instances of either "that dog" or "that cat", you would search for: 
 
-```(that dog)|(that cat)```
+``` (that dog)|(that cat) ```
 
  Notice that the vertical bar | can appear either inside or outside the parentheses, depending on what you want to search for.
 
