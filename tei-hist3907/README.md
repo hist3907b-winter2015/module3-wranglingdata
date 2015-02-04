@@ -64,7 +64,7 @@ For persons, surround your text with these
  
 For places, surround your text with these
 
-<code>&lt;place key="Sheffield, United Kingdom" ref="http://tools.wmflabs.org/geohack/geohack.php?pagename=Sheffield&params=53_23_01_N_1_28_01_W_type:city_region:GB""&gt; &lt;/place&gt;</code>
+<code>&lt;place key="Sheffield, United Kingdom" ref="http://tools.wmflabs.org/geohack/geohack.php?pagename=Sheffield&amp;params=53_23_01_N_1_28_01_W_type:city_region:GB""&gt; &lt;/place&gt;</code>
 
 + In **key**, put the city and country with best information you can find for the modern names for this location
 + In **ref**, put a link to the relevant coordinates on Wikipedia GeoHack website (http://tools.wmflabs.org/geohack/)  (Where can you go to find coordinates in the first place? Why would we link to this particular site?)
@@ -79,6 +79,8 @@ For claims or arguments, surround your text with these
 + In **ref**, put the link to the website where you got the information to assess this claim. If you are doing it based on lecture material, write "http://www.shu.ac.uk", but know that lecture material is a very weak source and should be avoided wherever possible
 
 When you are happy with your work, hit save your work, give it a useful name, make sure it has .xml as the extension, and save it *and the .xsl file* to your repository.
+
+> Alex Gill has made [The Short and Sweet TEI Handout](https://docs.google.com/document/edit?id=12ErwXGHGaFL71M3cWHpI6gkfVzzsKHfk7U6N6vRmIS4&authkey=CKG3l6oG&hl=en#heading=h.uy40z0-ctpi0) which you might want to explore as well.
 
 ### Viewing Your Encoded Text ###
 
@@ -99,8 +101,6 @@ For Mac:
 
 ### Now: transformations!
 
-In the TEI Close Reading folder, there is a file called [SG_transformer.xsl](SG_transformer.xsl). Open that file in your text editor. What tags would it be looking for? What might it do to your markup? What line would you change in your XML file to get it to point to this stylesheet? What would you have to do to this file (which was originally written for another project) to get it to work with the tags in _this_ exercise? Write all this down in your open notebook. It is a good habit to get into to keep track of your thoughts when looking at ancillary files like this.
-
-You don't necessarily have to adapt the transformer file, but you can if you're up to the challenge!
+In the TEI Close Reading folder, there is a file called [SG_transformer.xsl](SG_transformer.xsl). Open that file in your text editor. What tags would it be looking for? What might it do to your markup? What line would you change in your XML file to get it to point to this stylesheet? Write all this down in your open notebook. It is a good habit to get into to keep track of your thoughts when looking at ancillary files like this.
 
 If the nature of your project will involve a lot of transcription, you would be well advised to use an XML editor like [OxygenXML](http://www.oxygenxml.com/), which has a free 1 month trial. The editor makes it easy to maintain _consistency_ in your markup, and also, to quickly create stylesheets for whatever purpose you need. There are also a number of utility programs freely available that will convert XML to CSV or other formats. One such may be [found here](https://code.google.com/p/xml2csv-conv/). But the best way to transform these XML files is with XSL. 
