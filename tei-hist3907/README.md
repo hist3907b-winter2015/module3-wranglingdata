@@ -64,7 +64,7 @@ For persons, surround your text with these
  
 For places, surround your text with these
 
-<code>&lt;place key="Sheffield, United Kingdom" ref="http://tools.wmflabs.org/geohack/geohack.php?pagename=Sheffield&amp;params=53_23_01_N_1_28_01_W_type:city_region:GB""&gt; &lt;/place&gt;</code>
+<code>&lt;placename key="Sheffield, United Kingdom" ref="http://tools.wmflabs.org/geohack/geohack.php?pagename=Sheffield&params=53_23_01_N_1_28_01_W_type:city_region:GB""&gt; &lt;/place&gt;</code>
 
 + In **key**, put the city and country with best information you can find for the modern names for this location
 + In **ref**, put a link to the relevant coordinates on Wikipedia GeoHack website (http://tools.wmflabs.org/geohack/)  (Where can you go to find coordinates in the first place? Why would we link to this particular site?)
@@ -92,7 +92,9 @@ If you hover over the coloured sections, you should see a pop-up with the additi
 
 *If you do not see the colour-coded version of your text, this does not necessarily mean that you've done something wrong*
 + Some browsers will not perform the transformation, for security reasons.
-+ In which case, here's what we can do. If you are using Notepad++, go to 'Plugins' >> Plugin Tools. Select 'XML Tools' from the list, and install it. You'll probably have to restart the program to complete the plugin installation. Open up the [1.xml] file in Notepad ++. Then, under 'plugins'>>'xml tools" select 'XSL Transformation settings'. In the popup, click on the elipses: ``` ... ``` to open up the file finder, and select the ``` 000style.xsl ``` stylesheet. Click 'transform'. A new tab will open in Notepad++ _with a fully-formed html file displaying your data according to the stylesheet._ Save this, and then open it in a browser!
++ In which case, here's what we can do. If you are using Notepad++, go to 'Plugins' >> Plugin Tools. Select 'XML Tools' from the list, and install it. You'll probably have to restart the program to complete the plugin installation. Open up the [1.xml](/1.xml) file in Notepad ++. Then, under 'plugins'>>'xml tools" select 'XSL Transformation settings'. In the popup, click on the elipses: ``` ... ``` to open up the file finder, and select the ``` 000style.xsl ``` stylesheet. Click 'transform'. A new tab will open in Notepad++ _with a fully-formed html file displaying your data according to the stylesheet._ Save this, and then open it in a browser!
++ You can also check 'validate' from the XML Tools menu, which will identify errors in your XML. If you're still having errors, a likely culprit might be the way your geographic URLs are encoded. Compare what you've got with what's in the [1.xml](/1.xml) reference document. 
+
 + _Advanced_: If you install a WAMP server, and put your xml and xsl files in the WWW folder, you *should* be able to see the transformation no problem at ``` localhost\myxml.xml ``` (for example).
 
 For Mac:
