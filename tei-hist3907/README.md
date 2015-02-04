@@ -86,7 +86,16 @@ To see your encoded text, make sure your .xml and .xsl file are in the same fold
 
 If you now see a colour-coded version of your text, Congratulations!  
 
-If you hover over the coloured sections, you should see a pop-up with the additional information you entered.  
+If you hover over the coloured sections, you should see a pop-up with the additional information you entered. 
+
+*If you do not see the colour-coded version of your text, this does not necessarily mean that you've done something wrong*
++ Some browsers will not perform the transformation, for security reasons.
++ In which case, here's what we can do. If you are using Notepad++, go to 'Plugins' >> Plugin Tools. Select 'XML Tools' from the list, and install it. You'll probably have to restart the program to complete the plugin installation. Open up the [1.xml] file in Notepad ++. Then, under 'plugins'>>'xml tools" select 'XSL Transformation settings'. In the popup, click on the elipses: ``` ... ``` to open up the file finder, and select the ``` 000style.xsl ``` stylesheet. Click 'transform'. A new tab will open in Notepad++ _with a fully-formed html file displaying your data according to the stylesheet._ Save this, and then open it in a browser!
++ _Advanced_: If you install a WAMP server, and put your xml and xsl files in the WWW folder, you *should* be able to see the transformation no problem at ``` localhost\myxml.xml ``` (for example).
+
+For Mac:
++ Let me get back to you on this. Probably one should just use the trial license for Oxygen...
+
 
 ### Now: transformations!
 
