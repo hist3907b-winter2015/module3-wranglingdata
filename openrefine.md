@@ -33,9 +33,13 @@ Say we wanted, instead of the correspondence network, a visualization of all the
 
 _An interesting use case is discussed [here](http://blog.spaziodati.eu/en/2014/07/24/using-openrefine-to-perform-text-mining-on-your-data-food-for-thoughts/) and [here](http://freeyourmetadata.org/publications/named-entity-recognition.pdf)_
 
-### OPtional: Exploring Other Named Entity Extraction tools
+### Optional: Exploring Other Named Entity Extraction tools
+
+*Voyant Tools RezoViz*
 
 [Voyant-Tools](http://voyant-tools) has something called 'RezoViz', which will extract entities and tie them together into a network based on appearing in the same document. Upload your corpus to Voyant-Tools. In the top right, there's a 'save' icon. Select 'url for a different tool/skin'. Select 'RezoViz' from the tools list that pops up. A new URL will appear in the box. Copy, paste into a new browser window. Works best on Chrome.
+
+*Stanford NER*
 
 [Stanford NER](http://nlp.stanford.edu/software/CRF-NER.shtml) and [Mac instructions for use](http://historyinthecity.blogspot.ca/2014/06/how-to-use-stanfords-ner-and-extract.html). The link is to Michelle Moravec's instructions, for Mac. If you're on windows and want to do this, things are a bit more complicated. Download and unzip the NER package. 
 
