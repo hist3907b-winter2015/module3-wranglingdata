@@ -10,7 +10,7 @@ This exercise follows a tutorial written for [The Macroscope](http://themacrosco
 
 ## Exercise 3
 
-*Open Refine* is the final tool we'll explore in this module. This engine allows us to clean up our messy data. We will feed it the results from Exercise 2 in order to consolidate individuals (ie, 'Shawn' and 'S4awn' are probably the same person, so Open Refine will consolidate that information for us). This exercise also follows a tutorial written for [The Macroscope](http://themacroscope.org).
+*Open Refine* is the final tool we'll explore in this module. This engine allows us to clean up our messy data. We will feed it the results from Exercise 2 in order to consolidate individuals (ie, 'Shawn' and 'S4awn' are probably the same person, so Open Refine will consolidate that information for us). This exercise also follows a tutorial written for [The Macroscope](http://themacroscope.org). [Here are the instructions](/openrefine.md).
 
 ## Optional exercises
 
