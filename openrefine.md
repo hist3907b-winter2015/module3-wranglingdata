@@ -1,1 +1,22 @@
-_his text is adopted from the first drafts of The Macroscope which is currently in-press with Imperial College Press. Users should consult that version once it's published._
+_This text is adopted from the first drafts of The Macroscope which is currently in-press with Imperial College Press. Users should consult that version once it's published._
+
+# Install Open Refine
+
+>OpenRefine (formerly Google Refine) is a powerful tool for working with messy data: cleaning it; transforming it from one format into another; extending it with web services; and linking it to databases like Freebase.
+
+In this exercise, we are going to use a tool that originated with Google. Since 2012, it has been open-sourced and freely available on the net. Using it takes a bit of getting used to, however. Visit the [Open Refine] home page and watch the three videos. Then, [download it to your machine](http://openrefine.org/download.html)
+
+Follow the installation instructions. Start Open Refine by double clicking on its icon. This will open a new browser window, pointing to http://127.0.0.1:3333. This location is your own computer, so even though it looks like it’s running on the internet, it isn’t. The ‘3333’ is a ‘port’, meaning that Open Refine is running much like a server, serving up a webpage via that port to the browser.
+
+# Start Cleaning our Texan Correspondence.
+
++ Start a new project by clicking on the ‘create project’ tab on the left hand side of the screen. Click on ‘choose files’ and select the CSV file created in exercise 2. This will give you a preview of your data. Name your project in the box on the top right side (eg., 'm3-exercise3' or similar) and then click ‘create project’. It may take a few minutes.
+
++ Once your project has started, one of the columns that should be visible in your data is ‘sender’. Click on the arrow to the left of "Sender" in OpenRefine and select Facet->Text Facet. Do the same with the arrow next to "Recipient". A box will appear on the left side of the browser showing all 189 names listed as senders in the spreadsheet. The spreadsheet itself is nearly a thousand rows, so immediately we see that, in this correspondence collection, some names are used multiple times. You may also have noticed that many of the names suffered from errors in the text scan (OCR or Optical Character Recognition errors), rendering some identical names from the book as similar, but not the same, in the spreadsheet. For example the recipient "Juan de Dios Cafiedo" is occasionally listed as "Juan de Dios CaAedo". Any subsequent analysis will need these errors to be cleared up, and OpenRefine will help fix them.
+
++ Within the "Sender" facet box on the left-hand side, click on the button labeled "Cluster". This feature presents various automatic ways of merging values that appear to be the same.   Play with the values in the drop-down boxes and notice how the number of clusters found change depending on which method is used. Because the methods are slightly different, each will present different matches that may or may not be useful. If you see two values which should be merged, e.g. "Ashbel Smith" and ". Ashbel Smith", check the box to the right in the 'Merge' column and click the 'Merge Selected & Re-Cluster' button below.
+
++ Go through the various cluster methods one-at-a-time, including changing number values, and merge the values which appear to be the same. "Juan de Dios CaAedo" clearly should be merged with "Juan de Dios Cafiedo", however "Correspondent in Tampico" probably should not be merged with "Correspondent at Vera Cruz." Since we are not experts, we will have to use our best judgement in these cases - or get cracking on some more research to help us make the call. By the end, you should have reduced the number of unique Senders from 189 to around 150. Repeat these steps with Recipients, reducing unique Recipients from 192 to about 160. To finish the automatic cleaning of the data, click the arrow next to "Sender" and select 'Edit Cells->Common transforms->Trim leading and trailing whitespace'. Repeat for "Recipient". The resulting spreadsheet will not be perfect, but it will be much easier to clean by hand than it would have been before taking this step. Click on ‘export’ at the top right of the window to get your data back out as a .csv file.
+
+# Now what?
+The text you've just cleaned could now be loaded into something like [Palladio](http://palladio.designhumanities.org/) or [Gephi](http://gephi.org) for network analysis! But before we do that, there's just a little bit left to do:
