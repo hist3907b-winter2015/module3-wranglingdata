@@ -41,7 +41,11 @@ _An interesting use case is discussed [here](http://blog.spaziodati.eu/en/2014/0
 
 *Stanford NER*
 
-[Stanford NER](http://nlp.stanford.edu/software/CRF-NER.shtml) and [Mac instructions for use](http://historyinthecity.blogspot.ca/2014/06/how-to-use-stanfords-ner-and-extract.html). The link is to Michelle Moravec's instructions, for Mac. If you're on windows and want to do this, things are a bit more complicated. Download and unzip the NER package. 
+[Stanford NER](http://nlp.stanford.edu/software/CRF-NER.shtml) download.
+
++ [Mac instructions for use](http://historyinthecity.blogspot.ca/2014/06/how-to-use-stanfords-ner-and-extract.html). The link is to Michelle Moravec's instructions, for Mac. 
+
++ Windows: If you're on windows and want to do this, things are a bit more complicated. Download and unzip the NER package. 
 
 + Open a command prompt in the Stanford NER folder on your Windows machine (you can right-click on the folder in your windows explorer, and select ‘open command prompt here’).
 
