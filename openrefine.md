@@ -33,6 +33,8 @@ Say we wanted, instead of the correspondence network, a visualization of all the
 
 _An interesting use case is discussed [here](http://blog.spaziodati.eu/en/2014/07/24/using-openrefine-to-perform-text-mining-on-your-data-food-for-thoughts/) and [here](http://freeyourmetadata.org/publications/named-entity-recognition.pdf)_
 
+* Further Help * [see this page by Kalani Craig](http://www.kalanicraig.com/2014/12/aha-2015-managing-and-maintaining-digital-data-getting-started-in-digital-history-intermediate-workshop/)
+
 ### Optional: Exploring Other Named Entity Extraction tools
 
 *Voyant Tools RezoViz*
