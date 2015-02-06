@@ -8,6 +8,8 @@ When we have text that has been marked up, we can do interesting things with it.
 
 This exercise follows a tutorial written for [The Macroscope](http://themacroscope.org).(Another good reference is [http://www.regular-expressions.info/](http://www.regular-expressions.info/)). Start with [a gentle introduction to regex](/regex.md) and then begin the [regex exercise](/regexex.md). You should have [RegeXr](http://www.regexr.com/), an interactive tutorial that shows us what various regular expressions can do, open in a browser window somewhere so you can test your regular expressions out _first_ before applying them to your data!  We will use the power of regular expressions to search for particular patterns in a published volume of the correspondence of the Republic of Texas. We'll use regex to massage the information into a format that we can then use to generate a social network of letter writers over time.
 
+What if you had *lots* of documents that you needed to clean up? One way of doing it would be to write a python program that applied your regex automatically, across all the files in a folder. *Optional advanced exercise*: [Cleaning OCR'd Text with Regular Expressions](http://programminghistorian.org/lessons/cleaning-ocrd-text-with-regular-expressions)
+
 ## Exercise 3
 
 *Open Refine* is the final tool we'll explore in this module. This engine allows us to clean up our messy data. We will feed it the results from Exercise 2 in order to consolidate individuals (ie, 'Shawn' and 'S4awn' are probably the same person, so Open Refine will consolidate that information for us). This exercise also follows a tutorial written for [The Macroscope](http://themacroscope.org). [Here are the instructions](/openrefine.md).
