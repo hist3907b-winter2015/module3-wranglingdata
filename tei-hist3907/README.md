@@ -97,11 +97,15 @@ If you hover over the coloured sections, you should see a pop-up with the additi
 
 + _Advanced_: If you install a WAMP server, and put your xml and xsl files in the WWW folder, you *should* be able to see the transformation no problem at ``` localhost\myxml.xml ``` (for example).
 
-For Mac:
-+ Let me get back to you on this. Probably one should just use the trial license for Oxygen...
+-----
+*Neat Trick* If you have a 'gh-pages' branch in your repository, and it contains your .xml and your .xsl documents, you can view your xml live on the web. For instance, in my repository, I have the Colonial Newspaper Database as an xml document, and it points to ``` csvcreator.xsl ```. Here's my repo: https://github.com/shawngraham/exercise/tree/gh-pages and here's the location of the 'live' version http://shawngraham.github.io/exercise  . Any of your repos can be viewed live at 
+ 
+``` your username dot github dot io / reponame ```
+
+So here's the CND.xml, transformed into a csv: http://shawngraham.github.io/exercise/cnd.xml . If you 'view page source', you'll see the original XML again! Save-as the page as .csv and you can do some data mining on it.
 
 
-### Now: transformations!
+### More on transformations
 
 In the TEI Close Reading folder, there is a file called [SG_transformer.xsl](SG_transformer.xsl). Open that file in your text editor. What tags would it be looking for? What might it do to your markup? What line would you change in your XML file to get it to point to this stylesheet? Write all this down in your open notebook. It is a good habit to get into to keep track of your thoughts when looking at ancillary files like this.
 
