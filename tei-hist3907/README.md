@@ -80,7 +80,7 @@ For claims or arguments, surround your text with these
 
 When you are happy with your work, hit save your work, give it a useful name, make sure it has .xml as the extension, and save it *and the .xsl file* to your repository.
 
-> Alex Gill has made [The Short and Sweet TEI Handout](https://docs.google.com/document/edit?id=12ErwXGHGaFL71M3cWHpI6gkfVzzsKHfk7U6N6vRmIS4&authkey=CKG3l6oG&hl=en#heading=h.uy40z0-ctpi0) which you might want to explore as well.
+> Alex Gill has made [The Short and Sweet TEI Handout](https://docs.google.com/document/edit?id=12ErwXGHGaFL71M3cWHpI6gkfVzzsKHfk7U6N6vRmIS4&authkey=CKG3l6oG&hl=en#heading=h.uy40z0-ctpi0) which you might want to explore as well. When you embark on encoding documents for your own research, [here are some questions to think about](http://www.wwp.northeastern.edu/outreach/seminars/_current/handouts/document_analysis.xhtml) to help you decide what kinds of tagging you'll need; these [templates from HisTEI](https://github.com/odaata/HisTEI/tree/master/frameworks/HisTEI/templates) might be useful (open the whole project with OxygenXML for full functionality, but you can copy those templates in any editor). 
 
 ### Viewing Your Encoded Text ###
 
