@@ -95,14 +95,13 @@ If you hover over the coloured sections, you should see a pop-up with the additi
 + In which case, here's what we can do. If you are using Notepad++, go to 'Plugins' >> Plugin Tools. Select 'XML Tools' from the list, and install it. You'll probably have to restart the program to complete the plugin installation. Open up the [1.xml](/1.xml) file in Notepad ++. Then, under 'plugins'>>'xml tools" select 'XSL Transformation settings'. In the popup, click on the elipses: ``` ... ``` to open up the file finder, and select the ``` 000style.xsl ``` stylesheet. Click 'transform'. A new tab will open in Notepad++ _with a fully-formed html file displaying your data according to the stylesheet._ Save this, and then open it in a browser!
 + You can also check 'validate' from the XML Tools menu, which will identify errors in your XML. If you're still having errors, a likely culprit might be the way your geographic URLs are encoded. Compare what you've got with what's in the [1.xml](/1.xml) reference document. 
 
-+ _Advanced_: If you install a WAMP server, and put your xml and xsl files in the WWW folder, you *should* be able to see the transformation no problem at ``` localhost\myxml.xml ``` (for example).
++ _Advanced_: If you install a [WAMP](http://www.wampserver.com/en/) or [MAMP](http://www.mamp.info/en/) server, and put your xml and xsl files in the WWW folder, you *should* be able to see the transformation no problem at ``` localhost\myxml.xml ``` (for example).
 
------
-*Neat Trick* If you have a 'gh-pages' branch in your repository, and it contains your .xml and your .xsl documents, you can view your xml live on the web. For instance, in my repository, I have the Colonial Newspaper Database as an xml document, and it points to ``` csvcreator.xsl ```. Here's my repo: https://github.com/shawngraham/exercise/tree/gh-pages and here's the location of the 'live' version http://shawngraham.github.io/exercise  . Any of your repos can be viewed live at 
+> *Neat Trick* If you have a 'gh-pages' branch in your repository, and it contains your .xml and your .xsl documents, you can view your xml live on the web. For instance, in my repository, I have the Colonial Newspaper Database as an xml document, and it points to ``` csvcreator.xsl ```. Here's my repo: https://github.com/shawngraham/exercise/tree/gh-pages and here's the location of the 'live' version http://shawngraham.github.io/exercise  . Any of your repos can be viewed live at 
  
-``` your username dot github dot io / reponame ```
+> ``` your username dot github dot io / reponame ```
 
-So here's the CND.xml, transformed into a csv: http://shawngraham.github.io/exercise/cnd.xml . If you 'view page source', you'll see the original XML again! Save-as the page as .csv and you can do some data mining on it.
+> So here's the CND.xml, transformed into a csv: http://shawngraham.github.io/exercise/cnd.xml . If you 'view page source', you'll see the original XML again! Save-as the page as .csv and you can do some data mining on it.
 
 
 ### More on transformations
