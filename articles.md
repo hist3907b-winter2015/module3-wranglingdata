@@ -5,6 +5,6 @@ Blevins, [Mining and Mapping the Production of Space A View of the World from Ho
 Blevins, [Space, Nation, and the Triumph of Region: A View of the World from Houston](http://jah.oxfordjournals.org/content/101/1/122.full?keytype=ref&ijkey=unucsImiwNrelaF)
 
 ###Blog posts
-[Ian Milligan on Imageplot](http://ianmilligan.ca/2014/08/27/using-imageplot-to-explore-web-archived-images/)
+[Ian Milligan on Imageplot](http://ianmilligan.ca/2014/08/27/using-imageplot-to-explore-web-archived-images/) and [here](http://ianmilligan.ca/2014/08/11/using-images-to-gain-insight-into-web-archives/)
 
 _more will be added in due time_
