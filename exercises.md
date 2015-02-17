@@ -20,4 +20,4 @@ For more advanced usage of Open Refine, as an optional exercise you can also try
 
 When you're creating files, generating files, downloading files... things get very messy, very quickly. In these optional exercises, we learn some simple commands (in your terminal or shell) to move things around, flatten folder structures, join files together or break them apart.
 
-Twitter: [here is an optional exercise on harvesting and visualizing tweets](tward.md)
+Twitter: [here is an optional exercise on harvesting and visualizing tweets](twarc.md)
