@@ -12,7 +12,7 @@ The first thing you'll need for this exercise is Python. Python is a programming
 
 1. Download and install [Python](https://www.python.org/downloads/) version 2.7.9. (Twarc will use with Python 2 or 3, but I know it works with 2.7.9 because that's what I have installed on my own machine). Follow all prompts given to you by the installer.
 2. Make sure you have [Pip](https://pip.pypa.io/en/latest/installing.html) installed. *NB* Pip *should* be installed when you installed Python - it's included by default in version 2.7.9 or above, so you should be ok (this note is aimed at those of you who already have Python). You can check, on the command line, if pip is installed with this command: ``` pip list ```. This will list every module you've got installed for Python - if Pip is installed, it'll be in the list.
-3. Next thing to do is to get the Twarc files from Summers' repository. Go to [https://github.com/edsu/twarc](https://github.com/edsu/twarc) and download as zip. Unzip somewhere easy-to-get-to on your machine.
+3. Next thing to do is to get the Twarc files from Summers' repository. Go to [https://github.com/edsu/twarc](https://github.com/edsu/twarc) and download as zip. Unzip somewhere easy-to-get-to on your machine. (As it happens, you can also type `` pip install twarc `` from the command line to install it, but it won't give you the utilities folder you'll need later).
 
 ## Telling Twitter Who You Are
 
