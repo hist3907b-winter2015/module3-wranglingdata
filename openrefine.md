@@ -61,6 +61,6 @@ The first bit, java –mx500m says how much memory to use. If you have 1gb of me
 
 Open the text file in Notepad++, and you’ll see output like this:
 
-> In the name of the <LOCATION>Republic of Texas</LOCATION>, Free, Sovereign and Independent. To all whom these Presents shall come or may in any wise concern. I <PERSON>Sam Houston</PERSON> President thereof send Greeting
+> In the name of the ```<LOCATION>```Republic of Texas```</LOCATION>```, Free, Sovereign and Independent. To all whom these Presents shall come or may in any wise concern. I ```<PERSON>```Sam Houston```</PERSON>``` President thereof send Greeting
 
 Congratulations! You've tagged a body of letters. What next? You could organize this into XML, you could visualize, you could regex to find and extract all of your locations, or persons, or...
