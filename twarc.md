@@ -53,7 +53,7 @@ If all goes well, nothing should appear to happen but for a new command prompt a
 
 `twarc.py --consumer_key foo --consumer_secret bar --access_token baz --access_token_secret bez --search ferguson`
 
-_so if you are on a mac, and can set the source as above, you don't need to tell twarc your credentials when you run a search_
+_so if you are on a mac, and can set the source as above, you don't need to tell twarc your credentials when you run a search. if you are NOT on a mac, you WILL have to do this._
 
 ### A Simple Search
 
