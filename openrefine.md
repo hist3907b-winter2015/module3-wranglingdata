@@ -1,5 +1,7 @@
 _This text is adopted from the first drafts of The Macroscope which is currently in-press with Imperial College Press. Users should consult that version once it's published._
 
+(An alternative Open Refine exercise is offered by [Thomas Padilla](http://thomaspadilla.org/dataprep/) and you may wish to give it a try instead/too.) 
+
 # Install Open Refine
 
 >OpenRefine (formerly Google Refine) is a powerful tool for working with messy data: cleaning it; transforming it from one format into another; extending it with web services; and linking it to databases like Freebase.
