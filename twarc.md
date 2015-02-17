@@ -17,10 +17,15 @@ The first thing you'll need for this exercise is Python. Python is a programming
 ## Telling Twitter Who You Are
 
 Twarc works by interacting with Twitter's API. You need to set up authentication with Twitter, so that Twitter knows who you are when you start pinging them, asking for data. I assume you have a Twitter account? If not, you'll need to sign up for Twitter before you can proceed. Make sure you're logged into Twitter. Then,
+
 1. Go to their [developer page and hit the button marked 'create a new app'](https://apps.twitter.com/).
+
 2. You'll be presented with a screen looking rather like this: ![image](https://spring.io/guides/gs/register-twitter-app/images/tw-create-app.png) . In 'name' you have to create a unique name for your Twarc - I've used ``` SMG-twarc ``` for mine. In 'description' call it, 'twarc for my hist3907b class'. In 'website' give it the URL to your open notebook. Finally, you can leave 'call-back url' blank.
+
 3. Agree to terms and conditions, prove you're a human, and click 'create application'.
+
 4. You'll then see a screen that looks like this; here I've already clicked on the 'keys and access tokens' tab: ![[Imgur](http://i.imgur.com/mM4hZNN.png)
+
 5. Copy CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_TOKEN_SECRET to a file on your computer; never share this file, don't upload it anywhere, don't put it in your open notebook.
 
 ## Using Twarc
