@@ -41,13 +41,13 @@ export ACCESS_TOKEN="blah"
 export ACCESS_TOKEN_SECRET="blah"
 ```
 
-....where 'blah' is the relevant information, and you save the file as ```enviro.sh```
+....where "blah" is the relevant information (_with_ the quotation marks!), and you save this file as ```enviro.sh```
 
 Then, open a terminal and navigate to your Twarc folder. Type:
 
 ```source enviro.sh```
 
-If all goes well, nothing should appear to happen except a new command prompt appears.
+If all goes well, nothing should appear to happen but for a new command prompt appearing.
 
 *Non Mac users* I'm testing solutions for how to do this in other environments. However, Twarc is smart enough that you can also just give it your credentials whenever you run a query, like so:
 
@@ -61,6 +61,7 @@ The following would look for tweets concerning Ferguson (that is, tweets with th
 
 `twarc.py --search ferguson > tweets.json`
 
+(Keep in mind that PC & Linux folks: pass your consumer key and secret etc as per the previous section, when you search).
 This command tells your machine to run the code in the Twarc.py file, which asks Twitter to search and return all tweets with 'ferguson' in them, and then to write them to a file called 'tweets.json'. There might be a lot of tweets; this could take some time. (You might try to collect tweets related to Hist3907b instead, as that will be a *much* smaller dataset, just to see what's going on.)
 
 ### Extracting Geolocated tweets
