@@ -52,7 +52,7 @@ The following would look for tweets concerning Ferguson (that is, tweets with th
 
 `twarc.py --search ferguson > tweets.json`
 
-This command tells your machine to run the code in the Twarc.py file, which asks Twitter to search and return all tweets with 'ferguson' in them, and then to write them to a file called 'tweets.json'. Can you collect tweets related to Hist3907b?
+This command tells your machine to run the code in the Twarc.py file, which asks Twitter to search and return all tweets with 'ferguson' in them, and then to write them to a file called 'tweets.json'. There might be a lot of tweets; this could take some time. (You might try to collect tweets related to Hist3907b instead, as that will be a *much* smaller dataset, just to see what's going on.)
 
 ### Extracting Geolocated tweets
 
@@ -62,4 +62,8 @@ You can output GeoJSON from tweets where geo coordinates are available:
 
 ``` utils/geojson.py tweets.json > tweets.geojson ```
 
-This command tells your machine to look in the utils subfolder for a file called geojson.py and to run the code therein on your previously created json file with tweets in it. It filters that file and writes just the ones with location data into the geojson format. *Instant Map!* Github can recognize geojson and 
+This command tells your machine to look in the utils subfolder for a file called geojson.py and to run the code therein on your previously created json file with tweets in it. It filters that file and writes just the ones with location data into the geojson format. 
+
++ *Instant Map!* Github can recognize geojson and represent it on a map. In a new browser window, and assuming that you are logged into Github, go to [github gist](http://gist.github.com). Drag and drop your tweets.geojson file onto that browser window. Github will upload it. In the 'gist description' write 'geotagged tweets re ferguson'. Save. Instant, clickable, map!
+
+
