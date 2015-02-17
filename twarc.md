@@ -34,10 +34,15 @@ Twarc works by interacting with Twitter's API. You need to set up authentication
 
 Twarc will need that information you wrote down in the step above whenever it calls on Twitter. On a Mac, you can create a new file in the same folder where you unzipped Twarc and store your variables as a shell script. Its contents will look like this:
 
+```
 export CONSUMER_KEY="blah"
+
 export CONSUMER_SECRET="blah"
+
 export ACCESS_TOKEN="blah"
+
 export ACCESS_TOKEN_SECRET="blah"
+```
 
 ....where 'blah' is the relevant information, and you save the file as ```enviro.sh```
 
