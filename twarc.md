@@ -36,11 +36,8 @@ Twarc will need that information you wrote down in the step above whenever it ca
 
 ```
 export CONSUMER_KEY="blah"
-
 export CONSUMER_SECRET="blah"
-
 export ACCESS_TOKEN="blah"
-
 export ACCESS_TOKEN_SECRET="blah"
 ```
 
