@@ -20,7 +20,7 @@ Twarc works by interacting with Twitter's API. You need to set up authentication
 
 + Go to their [developer page and hit the button marked 'create a new app'](https://apps.twitter.com/).
 
-+ You'll be presented with a screen looking rather like this: ![image](https://spring.io/guides/gs/register-twitter-app/images/tw-create-app.png) . In 'name' you have to create a unique name for your Twarc - I've used ``` SMG-twarc ``` for mine. In 'description' call it, 'twarc for my hist3907b class'. In 'website' give it the URL to your open notebook. Finally, you can leave 'call-back url' blank.
++ You'll be presented with a screen looking rather like this: ![image](https://spring.io/guides/gs/register-twitter-app/images/tw-create-app.png) . In 'name' you have to create a unique name for your Twarc - I've used ``` twarc-SMG ``` for mine. In 'description' call it, 'twarc for my hist3907b class'. In 'website' give it the URL to your open notebook. Finally, you can leave 'call-back url' blank.
 
 + Agree to terms and conditions, prove you're a human, and click 'create application'.
 
