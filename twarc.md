@@ -6,7 +6,7 @@ In this optional exercise, you will install Twarc on your machine and use it to 
 
 -----
 
-## Getting set up.
+## Getting set up
 
 The first thing you'll need for this exercise is Python. Python is a programming language heavily used by historians and humanists. You will have noticed that many of the [Programming Historian](http://programminghistorian.org/) tutorials are written in Python. We won't be writing any code; we just need Python on your machine so that your computer understands how to interpret Twarc commands.
 
@@ -20,5 +20,46 @@ Twarc works by interacting with Twitter's API. You need to set up authentication
 1. Go to their [developer page and hit the button marked 'create a new app'](https://apps.twitter.com/).
 2. You'll be presented with a screen looking rather like this: ![image](https://spring.io/guides/gs/register-twitter-app/images/tw-create-app.png) . In 'name' you have to create a unique name for your Twarc - I've used ``` SMG-twarc ``` for mine. In 'description' call it, 'twarc for my hist3907b class'. In 'website' give it the URL to your open notebook. Finally, you can leave 'call-back url' blank.
 3. Agree to terms and conditions, prove you're a human, and click 'create application'.
-4. You'll then see a screen that looks like this; here I've already clicked on the 'keys and access tokens' tab:
+4. You'll then see a screen that looks like this; here I've already clicked on the 'keys and access tokens' tab: ![[Imgur](http://i.imgur.com/mM4hZNN.png)
+5. Copy CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_TOKEN_SECRET to a file on your computer; never share this file, don't upload it anywhere, don't put it in your open notebook.
 
+## Using Twarc
+
+Twarc will need that information you wrote down in the step above whenever it calls on Twitter. On a Mac, you can create a new file in the same folder where you unzipped Twarc and store your variables as a shell script. Its contents will look like this:
+
+export CONSUMER_KEY="blah"
+export CONSUMER_SECRET="blah"
+export ACCESS_TOKEN="blah"
+export ACCESS_TOKEN_SECRET="blah"
+
+....where 'blah' is the relevant information, and you save the file as ```enviro.sh```
+
+Then, open a terminal and navigate to your Twarc folder. Type:
+
+```source enviro.sh```
+
+If all goes well, nothing should appear to happen except a new command prompt appears.
+
+*Non Mac users* I'm testing solutions for how to do this in other environments. However, Twarc is smart enough that you can also just give it your credentials whenever you run a query, like so:
+
+`twarc.py --consumer_key foo --consumer_secret bar --access_token baz --access_token_secret bez --search ferguson`
+
+_so if you are on a mac, and can set the source as above, you don't need to tell twarc your credentials when you run a search_
+
+### A Simple Search
+
+The following would look for tweets concerning Ferguson (that is, tweets with the word or hashtag 'Ferguson', referencing the troubled town in Missouri):
+
+`twarc.py --search ferguson > tweets.json`
+
+This command tells your machine to run the code in the Twarc.py file, which asks Twitter to search and return all tweets with 'ferguson' in them, and then to write them to a file called 'tweets.json'. Can you collect tweets related to Hist3907b?
+
+### Extracting Geolocated tweets
+
+There are a number of utilities for Twarc - see [Summer's documentation here](https://github.com/edsu/twarc#utilities). One that you might be interested is the one for grabbing geolocated tweets.
+
+You can output GeoJSON from tweets where geo coordinates are available:
+
+``` utils/geojson.py tweets.json > tweets.geojson ```
+
+This command tells your machine to look in the utils subfolder for a file called geojson.py and to run the code therein on your previously created json file with tweets in it. It filters that file and writes just the ones with location data into the geojson format. *Instant Map!* Github can recognize geojson and 
