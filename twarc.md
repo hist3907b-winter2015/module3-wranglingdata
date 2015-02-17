@@ -1,6 +1,6 @@
 #Twitter Archiving, or TWARC
 
-Ed Summers is a software developer with feet firmly planted in the digital humanities world. He's currently at the Univeristy of Maryland, in the [Maryland Institute for Technology in the Humanities](http://mith.umd.edu/). Recently, he has built a [python tool](http://mith.umd.edu/) for searching and grabbing tweets (and all their associated metadata, which is extremely rich), called '[Twarc](https://github.com/edsu/twarc)'.
+[Ed Summers](http://inkdroid.org/journal/) is a software developer with feet firmly planted in the digital humanities world. He's currently at the Univeristy of Maryland, in the [Maryland Institute for Technology in the Humanities](http://mith.umd.edu/). Recently, he has built a [python tool](http://mith.umd.edu/) for searching and grabbing tweets (and all their associated metadata, which is extremely rich), called '[Twarc](https://github.com/edsu/twarc)'.
 
 In this optional exercise, you will install Twarc on your machine and use it to download all of the tweets hashtagged with '#hist3907b'. Once you've seen that it's working, you will then consider Twitter as a place for performing history. Perhaps you'll search for tweets related to a current event (the first draft of history, as the journalists used to call their work), perhaps you'll see what people are saying about a historic event, person, or place. Perhaps you'll try to map out how effective/affective those 'historical' twitter accounts are (like the ones that tweet WWII in 'real-time', or that purport to be the Emperor Hadrian).
 
@@ -66,4 +66,8 @@ This command tells your machine to look in the utils subfolder for a file called
 
 + *Instant Map!* Github can recognize geojson and represent it on a map. In a new browser window, and assuming that you are logged into Github, go to [github gist](http://gist.github.com). Drag and drop your tweets.geojson file onto that browser window. Github will upload it. In the 'gist description' write 'geotagged tweets re ferguson'. Save. Instant, clickable, map!
 
+### Your turn
 
+Use Twarc to collect a body of tweets that are historically interesting. Extract the geolocated ones and map them. Use some of the utilities to see if there is a difference between 'male' and 'female' tweeters (and how problematic might that be?). Convert your .json file to .csv and upload it to something like [Voyant](http://voyant-tools.org). Are there trends over time?
+
+(Incidentally, if you get an error message when trying to use one of the utilities, read the error message carefully. Is there something missing that the machine is looking for? [I had such a problem just the other day](https://twitter.com/edsu/status/567505909040304128) Follow the link to see how to solve).
