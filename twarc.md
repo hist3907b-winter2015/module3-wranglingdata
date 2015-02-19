@@ -51,7 +51,7 @@ If all goes well, nothing should appear to happen but for a new command prompt a
 
 *Non Mac users* I'm testing solutions for how to do this in other environments. However, Twarc is smart enough that you can also just give it your credentials whenever you run a query, like so:
 
-`twarc.py --consumer_key foo --consumer_secret bar --access_token baz --access_token_secret bez --search ferguson`
+`twarc.py --consumer_key foo --consumer_secret bar --access_token baz --access_token_secret bez --query ferguson`
 
 _so if you are on a mac, and can set the source as above, you don't need to tell twarc your credentials when you run a search. if you are NOT on a mac, you WILL have to do this._
 
@@ -59,7 +59,7 @@ _so if you are on a mac, and can set the source as above, you don't need to tell
 
 The following would look for tweets concerning Ferguson (that is, tweets with the word or hashtag 'Ferguson', referencing the troubled town in Missouri):
 
-`twarc.py --search ferguson > tweets.json`
+`twarc.py --query ferguson > tweets.json`
 
 (Keep in mind that PC & Linux folks: pass your consumer key and secret etc as per the previous section, when you search).
 This command tells your machine to run the code in the Twarc.py file, which asks Twitter to search and return all tweets with 'ferguson' in them, and then to write them to a file called 'tweets.json'. There might be a lot of tweets; this could take some time. (You might try to collect tweets related to Hist3907b instead, as that will be a *much* smaller dataset, just to see what's going on.)
