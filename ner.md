@@ -59,3 +59,5 @@ Open the text file in Notepad++, and you’ll see output like this:
 ```In the name of the <LOCATION>Republic of Texas</LOCATION>, Free, Sovereign and Independent. To all whom these Presents shall come or may in any wise concern. I <PERSON>Sam Houston</PERSON> President thereof send Greeting```
 
 Congratulations – you’ve successfully tagged a document using a named entity recognizer!
+
+Now you need to do a bit more data-munging before you can do anything useful. [Imagine you wanted to eventually visualize this as a network](/regex-ner.md). You will need your regex skills again...
