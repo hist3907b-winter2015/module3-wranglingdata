@@ -119,7 +119,6 @@ Find: \s*$<br>
 Replace with nothing. 
 
 We’re almost there. Let’s remove the comma that starts each line by searching for 
-```^,``` 
-(remembering that the carat character indicates the start of a line) and replacing with nothing. Save this as 'cleaned-locations.csv' Congratulations! You’ve taken quite complicated output and cleaned it so that every place mentioned on a single page in the original publication is now on its own line, which means you can import it into a network visualization package, a spreadsheet, or some other tool!
+```^,``` (remembering that the carat character indicates the start of a line) and replacing with nothing. Save this as 'cleaned-locations.csv' Congratulations! You’ve taken quite complicated output and cleaned it so that every place mentioned on a single page in the original publication is now on its own line, which means you can import it into a network visualization package, a spreadsheet, or some other tool!
 
-Now you can upload this csv to Gephi.
+Now you can upload this csv to Gephi [see module 4](https://github.com/hist3907b-winter2015/module4-holes).
