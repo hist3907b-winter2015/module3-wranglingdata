@@ -73,7 +73,7 @@ Replace: ,
 Save your work as a *.csv file. You now have a file that you can load into a variety of other platforms or tools to perform your analysis. Of course, NER is not perfect, especially when dealing with names like ‘Houston’ that were a personal name long before they were a place name.
 
 ###REGEX on PC to Useful Output:
-Open the file in Notepad++.  There are a lot of carriage returns, line breaks, and white spaces in this document that will make our regex very complicated and will in fact break it periodically, if we try to work with it as it is. Instead, let us remove all new lines and whitespaces and the outset, and use regex to put structure back. To begin, we want to get the entire document into a single line:
+Open your tagged file in Notepad++.  There are a lot of carriage returns, line breaks, and white spaces in this document that will make our regex very complicated and will in fact break it periodically, if we try to work with it as it is. Instead, let us remove all new lines and whitespaces and the outset, and use regex to put structure back. To begin, we want to get the entire document into a single line:
 
 Find: \n<br>
 Replace with nothing.
