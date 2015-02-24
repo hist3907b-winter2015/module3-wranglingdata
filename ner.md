@@ -1,3 +1,5 @@
+#Using the Stanford NER to tag a corpus
+
 In our regular expressions example, we were able to extract some of the metadata from the document because it was more or less already formatted in such a way that we could write a pattern to find it. Sometimes however clear-cut patterns are not quite as easy to apply. For instance, what if we were interested in the place names that appear in the documents? What if we suspected that the focus of diplomatic activity shifted over time? This is where ‘named entity recognition’ can be useful. Named entity recognition covers a broad range of techniques, based on machine learning and statistical models of language to laboriously trained classifiers using dictionaries. One of the easiest to use out-of-the-box is the Stanford Named Entity Recognizer.  In essence, we tell it ‘here is a block of text – classify!’ It will then process through the text, looking at the structure of your text and matching it against its statistical models of word use to identify person, organization, and locations. One can also expand that classification to extract time, money, percent, and date. 
 
 ## Grab the Stanford NER
