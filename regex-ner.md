@@ -1,9 +1,8 @@
 # Further Munging the output of NER
 
-In Module 3, you learned how to tag a corpus using the Stanford NER ([here is that exercise again, as a reminder](https://github.com/hist3907b-winter2015/module3-wranglingdata/blob/master/ner.md)). There are several ways we might like to visualize that output.
+So, you've learned how to tag a corpus using the Stanford NER ([here is that exercise again, as a reminder](https://github.com/hist3907b-winter2015/module3-wranglingdata/blob/master/ner.md)). There are several ways we might like to visualize that output.
 
 Unfortunately, depending on what you want to *do* with that data, you are going to have to go back to the data-munging cycle. 
-
 ## As a network
 Let us imagine that we wanted to visualize the locations mentioned in the letters as a kind of network. You may wish to [examine the exercise introducing Gephi first](https://github.com/hist3907b-winter2015/module4-holes/blob/master/gephi.md).
 
