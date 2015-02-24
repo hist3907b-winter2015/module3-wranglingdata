@@ -16,6 +16,10 @@ What if you had *lots* of documents that you needed to clean up? One way of doin
 
 For more advanced usage of Open Refine, as an optional exercise you can also try [The Programming Historian's Tutorial on Open Refine](http://programminghistorian.org/lessons/cleaning-data-with-openrefine). 
 
+
+## Exercise 4
+
+The *Stanford Named Entity Recognizer' is a program that enables you to automatically tag words in your corpus according to whether or not they are place names, individuals, and so on. The output can then be subsequently extracted and visualized, which you'll learn in Module 4. [Working with the Stanford NER](\ner.md).
 ## Optional exercises
 
 When you're creating files, generating files, downloading files... things get very messy, very quickly. In these optional exercises, we learn some simple commands (in your terminal or shell) to move things around, flatten folder structures, join files together or break them apart.
