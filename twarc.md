@@ -59,7 +59,7 @@ _so if you are on a mac, and can set the source as above, you don't need to tell
 
 The following would look for tweets concerning Ferguson (that is, tweets with the word or hashtag 'Ferguson', referencing the troubled town in Missouri):
 
-`twarc.py --query ferguson > tweets.json`
+`twarc.py --search ferguson > tweets.json`
 
 (Keep in mind that PC & Linux folks: pass your consumer key and secret etc as per the previous section, when you search).
 This command tells your machine to run the code in the Twarc.py file, which asks Twitter to search and return all tweets with 'ferguson' in them, and then to write them to a file called 'tweets.json'. There might be a lot of tweets; this could take some time. (You might try to collect tweets related to Hist3907b instead, as that will be a *much* smaller dataset, just to see what's going on.)
